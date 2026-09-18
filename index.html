@@ -611,6 +611,68 @@
       .contact-card{padding:34px 24px}
       .brand span:last-child{font-size:14px}
     }
+  
+    /* Başa dön butonu */
+    #backToTop{
+      position:fixed;
+      right:24px;
+      bottom:24px;
+      width:52px;
+      height:52px;
+      border:1px solid rgba(239,203,131,.55);
+      border-radius:50%;
+      background:linear-gradient(145deg,#7C173E,#5C102E);
+      color:#F7DDA6;
+      display:grid;
+      place-items:center;
+      cursor:pointer;
+      z-index:120;
+      box-shadow:0 12px 30px rgba(23,35,60,.22);
+      opacity:0;
+      visibility:hidden;
+      transform:translateY(14px) scale(.92);
+      transition:
+        opacity .22s ease,
+        visibility .22s ease,
+        transform .22s ease,
+        box-shadow .22s ease;
+    }
+
+    #backToTop.visible{
+      opacity:1;
+      visibility:visible;
+      transform:translateY(0) scale(1);
+    }
+
+    #backToTop:hover{
+      transform:translateY(-3px) scale(1.03);
+      box-shadow:0 16px 36px rgba(23,35,60,.28);
+    }
+
+    #backToTop:focus-visible{
+      outline:3px solid rgba(239,203,131,.55);
+      outline-offset:4px;
+    }
+
+    #backToTop svg{
+      width:22px;
+      height:22px;
+      stroke:currentColor;
+      stroke-width:2.2;
+      fill:none;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+    }
+
+    @media(max-width:650px){
+      #backToTop{
+        right:16px;
+        bottom:16px;
+        width:48px;
+        height:48px;
+      }
+    }
+
   </style>
 </head>
 
@@ -952,8 +1014,37 @@
     </div>
   </footer>
 
+
+  <button id="backToTop" type="button" aria-label="Sayfanın en başına dön" title="Başa dön">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M6 15l6-6 6 6"/>
+    </svg>
+  </button>
+
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+
+    const backToTop = document.getElementById("backToTop");
+
+    const toggleBackToTop = () => {
+      backToTop.classList.toggle("visible", window.scrollY > 360);
+    };
+
+    window.addEventListener("scroll", toggleBackToTop, { passive: true });
+    toggleBackToTop();
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    backToTop.addEventListener("keydown", (event) => {
+      if(event.key === "Enter" || event.key === " "){
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    });
+
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
