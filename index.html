@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dr. İlknur Rabia Türkölmez — Siyaset Bilimi ve Kamu Yönetimi, anayasa yargısı, yargısal tutum, demokrasi ve kamu yönetimi üzerine akademik çalışmalar." />
+  <meta name="theme-color" content="#17233c" />
+  <title>Dr. İlknur Rabia Türkölmez | Akademik Portfolyo</title>
+
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="favicon-192x192.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --ink:#17233c;
+      --ink-2:#263556;
+      --paper:#f7f4ee;
+      --paper-2:#fffdf9;
+      --accent:#a56a3a;
+      --accent-2:#d8b58d;
+      --line:rgba(23,35,60,.13);
+      --muted:#6d7480;
+      --white:#ffffff;
+      --shadow:0 20px 60px rgba(28,38,58,.11);
+      --radius:26px;
+      --max:1180px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      font-family:"DM Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:
+        radial-gradient(circle at 10% 5%, rgba(216,181,141,.20), transparent 25%),
+        radial-gradient(circle at 90% 20%, rgba(165,106,58,.08), transparent 24%),
+        var(--paper);
+      line-height:1.65;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:.28;
+      background-image:
+        linear-gradient(rgba(23,35,60,.025) 1px, transparent 1px),
+        linear-gradient(90deg,rgba(23,35,60,.025) 1px, transparent 1px);
+      background-size:38px 38px;
+      mask-image:linear-gradient(to bottom, black, transparent 75%);
+      z-index:-1;
+    }
+
+    a{color:inherit}
+    img{max-width:100%;display:block}
+    button,input,textarea{font:inherit}
+
+    .shell{width:min(calc(100% - 36px),var(--max));margin:auto}
+
+    .nav{
+      position:sticky;
+      top:0;
+      z-index:100;
+      backdrop-filter:blur(18px);
+      -webkit-backdrop-filter:blur(18px);
+      background:rgba(247,244,238,.82);
+      border-bottom:1px solid rgba(23,35,60,.08);
+    }
+
+    .nav-inner{
+      height:74px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:24px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      text-decoration:none;
+      font-weight:700;
+      letter-spacing:-.02em;
+    }
+
+    .brand-mark{
+      width:36px;height:36px;border-radius:50%;
+      display:grid;place-items:center;
+      color:var(--paper-2);
+      background:var(--ink);
+      font-family:"Playfair Display",serif;
+      font-size:18px;
+      box-shadow:0 7px 18px rgba(23,35,60,.2);
+    }
+
+    .menu{display:flex;gap:22px;align-items:center}
+    .menu a{
+      text-decoration:none;
+      color:var(--ink-2);
+      font-size:14px;
+      font-weight:600;
+      opacity:.82;
+      transition:.2s ease;
+    }
+    .menu a:hover{opacity:1;color:var(--accent)}
+
+    .hero{
+      padding:82px 0 58px;
+      overflow:hidden;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.18fr .82fr;
+      gap:54px;
+      align-items:center;
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:8px 12px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:rgba(255,255,255,.55);
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      color:var(--accent);
+    }
+    .eyebrow::before{
+      content:"";
+      width:7px;height:7px;border-radius:50%;
+      background:var(--accent);
+      box-shadow:0 0 0 5px rgba(165,106,58,.1);
+    }
+
+    h1,h2,h3{
+      font-family:"Playfair Display",Georgia,serif;
+      line-height:1.08;
+      margin:0;
+      letter-spacing:-.035em;
+    }
+
+    h1{
+      font-size:clamp(3.2rem,7vw,6.4rem);
+      max-width:850px;
+      margin-top:23px;
+    }
+
+    .hero-sub{
+      margin:24px 0 0;
+      max-width:760px;
+      font-size:clamp(1.08rem,2vw,1.32rem);
+      color:var(--ink-2);
+    }
+
+    .hero-focus{
+      margin:18px 0 0;
+      display:flex;
+      flex-wrap:wrap;
+      gap:9px;
+    }
+
+    .tag{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.58);
+      color:var(--ink-2);
+      padding:8px 11px;
+      border-radius:999px;
+      font-size:13px;
+      font-weight:600;
+    }
+
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:9px;
+      min-height:48px;
+      padding:0 18px;
+      border-radius:15px;
+      text-decoration:none;
+      font-weight:700;
+      border:1px solid var(--ink);
+      transition:.22s ease;
+    }
+    .btn.primary{background:var(--ink);color:white;box-shadow:0 11px 28px rgba(23,35,60,.17)}
+    .btn.secondary{background:rgba(255,255,255,.48)}
+    .btn:hover{transform:translateY(-2px)}
+
+    .portrait-wrap{
+      position:relative;
+      min-height:540px;
+      display:grid;
+      place-items:center;
+    }
+
+    .portrait-card{
+      width:min(100%,420px);
+      aspect-ratio:.78;
+      border-radius:34px;
+      position:relative;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      border:1px solid rgba(255,255,255,.7);
+      background:
+        linear-gradient(145deg, rgba(23,35,60,.92), rgba(38,53,86,.85)),
+        linear-gradient(30deg, #d8b58d, #f6efe5);
+    }
+
+    .portrait-card::before{
+      content:"";
+      position:absolute;
+      inset:18px;
+      border:1px solid rgba(255,255,255,.22);
+      border-radius:26px;
+    }
+
+    .portrait-placeholder{
+      position:absolute;
+      inset:0;
+      display:grid;
+      place-items:center;
+      text-align:center;
+      color:white;
+      padding:44px;
+    }
+
+    .portrait-initials{
+      width:142px;height:142px;border-radius:50%;
+      display:grid;place-items:center;
+      border:1px solid rgba(255,255,255,.28);
+      background:rgba(255,255,255,.08);
+      font:700 58px/1 "Playfair Display",serif;
+      margin:0 auto 26px;
+      backdrop-filter:blur(10px);
+    }
+
+    .portrait-placeholder small{opacity:.76;max-width:260px}
+
+    .floating-note{
+      position:absolute;
+      right:-8px;
+      bottom:42px;
+      width:250px;
+      padding:18px;
+      border-radius:20px;
+      background:rgba(255,253,249,.93);
+      border:1px solid var(--line);
+      box-shadow:0 15px 42px rgba(23,35,60,.14);
+    }
+    .floating-note strong{display:block;font-family:"Playfair Display",serif;font-size:22px}
+    .floating-note span{font-size:13px;color:var(--muted)}
+
+    section{padding:78px 0}
+    .section-kicker{
+      color:var(--accent);
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      margin-bottom:12px;
+    }
+    .section-title{
+      font-size:clamp(2.1rem,4vw,4rem);
+      max-width:820px;
+    }
+    .section-lead{
+      max-width:760px;
+      color:var(--muted);
+      margin:18px 0 0;
+      font-size:1.04rem;
+    }
+
+    .stats{
+      margin-top:38px;
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:14px;
+    }
+    .stat{
+      min-height:142px;
+      padding:22px;
+      border-radius:22px;
+      background:rgba(255,255,255,.58);
+      border:1px solid var(--line);
+    }
+    .stat b{
+      display:block;
+      font-family:"Playfair Display",serif;
+      font-size:42px;
+      line-height:1;
+      color:var(--accent);
+    }
+    .stat span{display:block;margin-top:12px;font-size:13px;color:var(--muted)}
+
+    .dark-panel{
+      width:min(calc(100% - 28px),1240px);
+      margin:18px auto 0;
+      border-radius:36px;
+      background:var(--ink);
+      color:white;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .dark-inner{padding:72px min(6vw,74px)}
+    .dark-panel .section-kicker{color:var(--accent-2)}
+    .dark-panel .section-lead{color:rgba(255,255,255,.67)}
+
+    .timeline{
+      margin-top:42px;
+      display:grid;
+      gap:0;
+      border-top:1px solid rgba(255,255,255,.13);
+    }
+
+    .timeline-item{
+      display:grid;
+      grid-template-columns:130px 1fr;
+      gap:28px;
+      padding:28px 0;
+      border-bottom:1px solid rgba(255,255,255,.13);
+    }
+
+    .timeline-year{
+      color:var(--accent-2);
+      font-weight:800;
+      letter-spacing:.04em;
+    }
+
+    .timeline-item h3{font-size:26px;margin-bottom:7px}
+    .timeline-item p{margin:0;color:rgba(255,255,255,.67)}
+    .timeline-item .thesis{
+      margin-top:10px;
+      padding-left:15px;
+      border-left:2px solid rgba(216,181,141,.45);
+      font-size:14px;
+      color:rgba(255,255,255,.72);
+    }
+
+    .expertise-grid{
+      margin-top:38px;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+
+    .expertise{
+      min-height:260px;
+      padding:28px;
+      border-radius:24px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.58);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .expertise::after{
+      content:"";
+      position:absolute;
+      width:130px;height:130px;
+      right:-50px;bottom:-50px;
+      border:22px solid rgba(165,106,58,.08);
+      border-radius:50%;
+    }
+
+    .num{
+      font-family:"Playfair Display",serif;
+      font-size:24px;
+      color:var(--accent);
+      margin-bottom:48px;
+    }
+    .expertise h3{font-size:27px}
+    .expertise p{color:var(--muted);font-size:14px;margin-bottom:0}
+
+    .feature-book{
+      margin-top:38px;
+      display:grid;
+      grid-template-columns:.72fr 1.28fr;
+      gap:38px;
+      align-items:stretch;
+    }
+
+    .book-cover{
+      min-height:520px;
+      border-radius:28px;
+      background:
+        linear-gradient(135deg, rgba(165,106,58,.20), transparent 45%),
+        var(--ink);
+      color:white;
+      padding:44px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      box-shadow:var(--shadow);
+      position:relative;
+      overflow:hidden;
+    }
+    .book-cover::before{
+      content:"";
+      position:absolute;
+      width:260px;height:260px;
+      border:1px solid rgba(255,255,255,.15);
+      border-radius:50%;
+      right:-80px;top:-60px;
+      box-shadow:0 0 0 42px rgba(255,255,255,.025),0 0 0 84px rgba(255,255,255,.018);
+    }
+    .book-cover small{letter-spacing:.16em;text-transform:uppercase;color:var(--accent-2)}
+    .book-cover h3{font-size:clamp(2.6rem,5vw,4.5rem);max-width:360px}
+    .book-cover .author{font-weight:700}
+
+    .book-copy{
+      border-radius:28px;
+      padding:38px;
+      background:rgba(255,255,255,.62);
+      border:1px solid var(--line);
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+    .book-copy h3{font-size:38px;margin:0 0 14px}
+    .book-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+    .book-meta span{
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:7px 10px;
+      font-size:12px;
+      color:var(--muted);
+      background:var(--paper-2);
+    }
+
+    .surname-note{
+      margin-top:24px;
+      padding:14px 16px;
+      border-left:3px solid var(--accent);
+      border-radius:0 14px 14px 0;
+      background:rgba(165,106,58,.07);
+      color:var(--ink-2);
+      font-size:14px;
+    }
+    .surname-note strong:first-child{color:var(--accent)}
+
+    .pub-grid{
+      margin-top:26px;
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:16px;
+    }
+    .pub{
+      padding:24px;
+      border-radius:22px;
+      background:rgba(255,255,255,.58);
+      border:1px solid var(--line);
+      transition:.2s ease;
+    }
+    .pub:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(23,35,60,.08)}
+    .pub-year{
+      color:var(--accent);
+      font-size:12px;
+      font-weight:800;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+    }
+    .pub h3{
+      font-family:"DM Sans",sans-serif;
+      font-size:19px;
+      line-height:1.4;
+      letter-spacing:-.02em;
+      margin:8px 0 7px;
+    }
+    .pub p{margin:0;color:var(--muted);font-size:13px}
+
+    details{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.55);
+      border-radius:20px;
+      margin-top:12px;
+      overflow:hidden;
+    }
+    summary{
+      cursor:pointer;
+      padding:20px 22px;
+      list-style:none;
+      font-weight:800;
+      display:flex;
+      justify-content:space-between;
+      gap:20px;
+    }
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:"＋";color:var(--accent)}
+    details[open] summary::after{content:"−"}
+    .detail-body{padding:0 22px 22px}
+    .detail-body ul{margin:0;padding-left:20px}
+    .detail-body li{margin:9px 0;color:var(--ink-2)}
+
+    .experience-card{
+      margin-top:38px;
+      display:grid;
+      grid-template-columns:.85fr 1.15fr;
+      border-radius:28px;
+      overflow:hidden;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.62);
+    }
+    .experience-main{padding:36px}
+    .experience-side{
+      padding:36px;
+      background:linear-gradient(150deg,var(--ink),var(--ink-2));
+      color:white;
+    }
+    .experience-side p{color:rgba(255,255,255,.68)}
+    .experience-card h3{font-size:34px}
+    .meta-line{color:var(--accent);font-weight:800;margin:12px 0 18px}
+
+    .contact{
+      padding:0 0 84px;
+    }
+    .contact-card{
+      border-radius:32px;
+      background:linear-gradient(135deg,var(--ink),#273a62);
+      color:white;
+      padding:52px;
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:40px;
+      align-items:end;
+      position:relative;
+      overflow:hidden;
+    }
+    .contact-card::after{
+      content:"";
+      position:absolute;
+      width:330px;height:330px;border-radius:50%;
+      border:1px solid rgba(255,255,255,.1);
+      right:-120px;top:-100px;
+      box-shadow:0 0 0 52px rgba(255,255,255,.02);
+    }
+    .contact-card h2{font-size:clamp(2.4rem,5vw,4.5rem)}
+    .contact-card p{color:rgba(255,255,255,.68);max-width:650px}
+    .contact-link{
+      justify-self:end;
+      position:relative;
+      z-index:2;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:15px 18px;
+      border:1px solid rgba(255,255,255,.24);
+      border-radius:16px;
+      text-decoration:none;
+      font-weight:800;
+      background:rgba(255,255,255,.08);
+      word-break:break-all;
+    }
+
+    footer{
+      padding:0 0 34px;
+      color:var(--muted);
+      font-size:13px;
+      text-align:center;
+    }
+
+    .reveal{
+      opacity:0;
+      transform:translateY(18px);
+      transition:opacity .6s ease,transform .6s ease;
+    }
+    .reveal.visible{opacity:1;transform:none}
+
+    @media(max-width:980px){
+      .menu{display:none}
+      .hero-grid,.feature-book,.experience-card,.contact-card{grid-template-columns:1fr}
+      .portrait-wrap{min-height:480px}
+      .floating-note{right:0}
+      .stats{grid-template-columns:repeat(2,1fr)}
+      .expertise-grid{grid-template-columns:1fr 1fr}
+      .contact-link{justify-self:start}
+    }
+
+    @media(max-width:650px){
+      .shell{width:min(calc(100% - 22px),var(--max))}
+      .nav-inner{height:64px}
+      .hero{padding-top:48px}
+      h1{font-size:clamp(3rem,15vw,4.5rem)}
+      .portrait-wrap{min-height:430px}
+      .portrait-card{width:92%}
+      .floating-note{right:3%;bottom:14px;width:220px}
+      section{padding:56px 0}
+      .dark-inner{padding:54px 22px}
+      .timeline-item{grid-template-columns:1fr;gap:6px}
+      .stats{grid-template-columns:1fr 1fr}
+      .stat{min-height:124px;padding:18px}
+      .expertise-grid,.pub-grid{grid-template-columns:1fr}
+      .book-cover{min-height:450px;padding:32px}
+      .book-copy,.experience-main,.experience-side{padding:26px}
+      .contact-card{padding:34px 24px}
+      .brand span:last-child{font-size:14px}
+    }
+  </style>
+</head>
+
+<body>
+  <header class="nav">
+    <div class="shell nav-inner">
+      <a class="brand" href="#top" aria-label="Ana sayfa">
+        <span class="brand-mark">İT</span>
+        <span>İlknur Rabia Türkölmez</span>
+      </a>
+      <nav class="menu" aria-label="Bölümler">
+        <a href="#profil">Profil</a>
+        <a href="#egitim">Eğitim</a>
+        <a href="#calismalar">Çalışmalar</a>
+        <a href="#yayinlar">Yayınlar</a>
+        <a href="ilknur-rabia-turkolmez-yok-cv.pdf" target="_blank" rel="noopener">Tam CV</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="shell hero-grid">
+        <div>
+          <span class="eyebrow">Akademik Portfolyo</span>
+          <h1>Dr. İlknur Rabia Türkölmez</h1>
+          <p class="hero-sub">
+            Siyaset Bilimi ve Kamu Yönetimi alanında; anayasa yargısı, yargısal tutum,
+            yargıya güven, demokrasi ve kamu yönetimi üzerine çalışan araştırmacı.
+          </p>
+
+          <div class="hero-focus" aria-label="Çalışma alanları">
+            <span class="tag">Anayasa Yargısı</span>
+            <span class="tag">Yargısal Tutum</span>
+            <span class="tag">Demokrasi</span>
+            <span class="tag">Kamu Yönetimi</span>
+            <span class="tag">Yargıya Güven</span>
+            <span class="tag">Sosyal &amp; Ekonomik Haklar</span>
+          </div>
+
+          <div class="actions">
+            <a class="btn primary" href="#yayinlar">Yayınları İncele</a>
+            <a class="btn secondary" href="ilknur-rabia-turkolmez-yok-cv.pdf" target="_blank" rel="noopener">YÖK Formatında Tam CV</a>
+            <a class="btn secondary" href="mailto:ilknurrabiaturkolmez@gmail.com">E-posta Gönder</a>
+          </div>
+        </div>
+
+        <div class="portrait-wrap">
+          <div class="portrait-card" aria-label="Yargısal Tutum kitap kapağı">
+            <img
+              src="data:image/webp;base64,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"
+              alt="İlknur Rabia Türkölmez — Yargısal Tutum kitap kapağı"
+              style="width:100%;height:100%;object-fit:cover;object-position:center;"
+            />
+          </div>
+          <div class="floating-note">
+            <strong>2025</strong>
+            <span>“Yargısal Tutum” adlı bilimsel kitap On İki Levha Yayıncılık tarafından yayımlandı.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="profil" class="reveal">
+      <div class="shell">
+        <div class="section-kicker">Akademik Profil</div>
+        <h2 class="section-title">Yargının karar verme süreçlerinden demokrasiye uzanan disiplinlerarası bir araştırma hattı.</h2>
+        <p class="section-lead">
+          Akademik çalışmaları, anayasa yargısında karar verme davranışı ve yargısal tutum etrafında
+          yoğunlaşırken; yargıya güven, sosyal ve ekonomik haklar, demokrasi-bürokrasi ilişkisi,
+          kamu yönetimi ve insan hakları başlıklarına da uzanır.
+        </p>
+
+        <div class="stats">
+          <div class="stat"><b>1</b><span>Bilimsel kitap</span></div>
+          <div class="stat"><b>4</b><span>Hakemli dergi makalesi</span></div>
+          <div class="stat"><b>5</b><span>Kitap bölümü / ansiklopedi maddesi</span></div>
+          <div class="stat"><b>4</b><span>Bilimsel toplantı bildirisi</span></div>
+          <div class="stat"><b>5</b><span>Kitap kritiği / inceleme</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="egitim" class="dark-panel reveal">
+      <div class="dark-inner">
+        <div class="section-kicker">Eğitim</div>
+        <h2 class="section-title">ODTÜ’den anayasa yargısında karar verme araştırmalarına.</h2>
+        <p class="section-lead">
+          Siyaset Bilimi ve Kamu Yönetimi temelli akademik yolculuk, kamu yönetimi yüksek lisansı ve
+          yargısal tutum odağındaki doktora çalışmasıyla devam etti.
+        </p>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-year">2023</div>
+            <div>
+              <h3>Doktora — Sakarya Üniversitesi</h3>
+              <p>Sosyal Bilimler Enstitüsü, Siyaset Bilimi ve Kamu Yönetimi</p>
+              <div class="thesis">
+                Tez: “Yargısal tutum perspektifinden Türk Anayasa Mahkemesinde karar verme:
+                Sosyal ve ekonomik haklar üzerinden bir inceleme”
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-year">2015</div>
+            <div>
+              <h3>Yüksek Lisans — Sakarya Üniversitesi</h3>
+              <p>Sosyal Bilimler Enstitüsü, Kamu Yönetimi</p>
+              <div class="thesis">
+                Tez: “Yeni kamu işletmeciliği açısından aile hekimliği uygulamasının değerlendirilmesi:
+                Sakarya ilinde bir araştırma”
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-year">2012</div>
+            <div>
+              <h3>Lisans — Orta Doğu Teknik Üniversitesi</h3>
+              <p>İktisadi ve İdari Bilimler Fakültesi, Siyaset Bilimi ve Kamu Yönetimi (İngilizce)</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="calismalar" class="reveal">
+      <div class="shell">
+        <div class="section-kicker">Çalışma Alanları</div>
+        <h2 class="section-title">Araştırma gündeminin merkezindeki başlıklar.</h2>
+
+        <div class="expertise-grid">
+          <article class="expertise">
+            <div class="num">01</div>
+            <h3>Yargısal Tutum</h3>
+            <p>Yargıçların karar verme davranışlarını, tutumları ve kurumsal bağlamla ilişkisi üzerinden ele alan araştırma hattı.</p>
+          </article>
+          <article class="expertise">
+            <div class="num">02</div>
+            <h3>Anayasa Yargısı</h3>
+            <p>Anayasa Mahkemesi, sosyal ve ekonomik haklar, yargısal minimalizm ve demokrasi-yargı ilişkisi.</p>
+          </article>
+          <article class="expertise">
+            <div class="num">03</div>
+            <h3>Yargıya Güven</h3>
+            <p>Yargı kurumuna yönelik güvenin kavramsal çerçevesi ve güven algısını etkileyen faktörler.</p>
+          </article>
+          <article class="expertise">
+            <div class="num">04</div>
+            <h3>Demokrasi &amp; Bürokrasi</h3>
+            <p>Demokratik yönetim, bürokrasinin rolü ve anayasa yargısıyla demokratik meşruiyet arasındaki tartışmalar.</p>
+          </article>
+          <article class="expertise">
+            <div class="num">05</div>
+            <h3>Kamu Yönetimi</h3>
+            <p>Yeni kamu işletmeciliği, etik, kamu görevlileri ve kamu hizmeti örgütlenmesi üzerine çalışmalar.</p>
+          </article>
+          <article class="expertise">
+            <div class="num">06</div>
+            <h3>İnsan Hakları</h3>
+            <p>Sosyal ve ekonomik haklar ile insan haklarının yasal ve kurumsal boyutlarına odaklanan çalışmalar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="shell">
+        <div class="section-kicker">Öne Çıkan Kitap</div>
+        <h2 class="section-title">Yargısal karar vermeye odaklanan doktora araştırmasının kitaplaşmış hali.</h2>
+
+        <div class="feature-book">
+          <div class="book-cover">
+            <small>Bilimsel Kitap · 2025</small>
+            <h3>Yargısal Tutum</h3>
+            <div>
+              <div class="author">İlknur Rabia Türkölmez</div>
+              <div style="margin-top:6px;color:rgba(255,255,255,.65);">Anayasa Mahkemesi’nin Sosyal ve Ekonomik Hak Kararları Üzerinden Bir İnceleme</div>
+            </div>
+          </div>
+
+          <div class="book-copy">
+            <h3>YARGISAL TUTUM</h3>
+            <p>
+              Anayasa Mahkemesi’nin sosyal ve ekonomik hak kararları üzerinden yargısal tutum meselesini
+              ele alan çalışma, 2025 yılında On İki Levha Yayıncılık tarafından yayımlandı.
+            </p>
+            <div class="book-meta">
+              <span>On İki Levha Yayıncılık</span>
+              <span>218 sayfa</span>
+              <span>1. Baskı</span>
+              <span>ISBN 978-625-5930-70-5</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="shell">
+        <div class="section-kicker">Akademik Deneyim</div>
+        <h2 class="section-title">Araştırma, proje ve kurumsal sorumluluk deneyimi.</h2>
+
+        <div class="experience-card">
+          <div class="experience-main">
+            <h3>Araştırma Görevlisi</h3>
+            <div class="meta-line">Sakarya Üniversitesi · 2012–2022</div>
+            <p>
+              Sosyal Bilimler Enstitüsü bünyesinde araştırma görevlisi olarak görev yaptı.
+              2013–2022 arasında Siyaset Bilimi ve Kamu Yönetimi Bölümü Engelli Birim Sorumluluğunu yürüttü.
+            </p>
+          </div>
+          <div class="experience-side">
+            <div class="section-kicker">Proje Deneyimi</div>
+            <h3>TÜBİTAK 3001</h3>
+            <p>
+              “Türkiye’de Yargı Kurumuna İlişkin Güven Algısını Etkileyen Faktörlerin Belirlenmesine
+              Yönelik Bir Ölçek Geliştirilmesi” projesinde bursiyer olarak görev aldı (2017–2018).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="yayinlar" class="reveal">
+      <div class="shell">
+        <div class="section-kicker">Seçilmiş Yayınlar</div>
+        <h2 class="section-title">Makale, kitap bölümü, bildiri ve incelemeler.</h2>
+
+        <div class="surname-note">
+          <strong>Bibliyografik not:</strong>
+          2018 ve öncesindeki bazı yayınlar ile bilimsel etkinlik kayıtlarında
+          <strong>İlknur Rabia Sırakaya</strong> adı kullanılmaktadır.
+        </div>
+
+        <div class="pub-grid">
+          <article class="pub">
+            <div class="pub-year">2022 · Makale</div>
+            <h3>Danimarka’nın Politik Yapısının Kameral Kökenleri</h3>
+            <p>Journal of Political Administrative and Local Studies, 5(1), 26–45.</p>
+          </article>
+          <article class="pub">
+            <div class="pub-year">2022 · Makale</div>
+            <h3>Yargısal Tutum Kavramına Sinemadan Bir Örnek: Eşitlik Savaşçısı Filmi</h3>
+            <p>Selçuk Üniversitesi Hukuk Fakültesi Dergisi, 30(1), 195–220.</p>
+          </article>
+          <article class="pub">
+            <div class="pub-year">2018 · Makale</div>
+            <h3>“Yargı Kurumuna Güven” Yazını Üzerine Bir İnceleme</h3>
+            <p>Serdar Gülener ile birlikte. Yayında yazar adı: <strong>İlknur Rabia Sırakaya</strong>. Uluslararası Politik Araştırmalar Dergisi, 4(1), 33–43.</p>
+          </article>
+          <article class="pub">
+            <div class="pub-year">2016 · Makale</div>
+            <h3>Hasta Güvenliği Kültürünün Algılanan Örgütsel Adalet Üzerine Etkisi</h3>
+            <p>Mahmut Akbolat ile birlikte. Yayında yazar adı: <strong>İlknur Rabia Sırakaya</strong>. Hacettepe Sağlık İdaresi Dergisi, 19, 1–16.</p>
+          </article>
+        </div>
+
+        <div style="margin-top:28px">
+          <details>
+            <summary>Kitap bölümleri ve ansiklopedi maddeleri</summary>
+            <div class="detail-body">
+              <ul>
+                <li>“Anayasa Yargısı ve Demokrasinin Tartışmalı Birlikteliği” — <em>Demokrasi (Teorik ve Güncel)</em>, 2022.</li>
+                <li>“Hakimin Hukuk Yaratması” — <em>Kamu Yönetimi Ansiklopedisi Hukuk Bilimleri</em>, 2022.</li>
+                <li>“Kanun Boşluğu” — <em>Kamu Yönetimi Ansiklopedisi Hukuk Bilimleri</em>, 2022.</li>
+                <li>“Demokrasi ve Bürokrasinin İlişkisi: Kim Yönetmeli?” — Abdulkadir Aksoy ile birlikte, 2022.</li>
+                <li>“Yüce Divan” — <em>Kamu Yönetimi Ansiklopedisi Hukuk Bilimleri</em>, 2022.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details>
+            <summary>Bilimsel toplantı bildirileri</summary>
+            <div class="detail-body">
+              <ul>
+                <li>“Anayasa Yargısında Artan İş Yüküne Bir Çözüm Önerisi Olarak Yargısal Minimalizm” — KAYFOR 2024.</li>
+                <li>“Yargıya Duyulan Güveni Etkileyen / Belirleyen Faktörler” — <strong>İlknur Rabia Sırakaya</strong> adıyla, Stratejik ve Sosyal Araştırmalar Sempozyumu, 2018.</li>
+                <li>“Türkiye ve Makedonya’nın İnsan Hakları Sistemlerine Yasal-Kurumsal Bir Bakış” — <strong>İlknur Rabia Sırakaya</strong> adıyla, 14. Uluslararası Türk Dünyası Sosyal Bilimler Kongresi, 2016.</li>
+                <li>“Kamu Yaşamında Standartlar Komitesi ve Kamu Görevlileri Etik Kurulu: Karşılaştırmalı Bir İnceleme” — <strong>İlknur Rabia Sırakaya</strong> adıyla, II. Kamu Etiği Kongresi, 2013.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details>
+            <summary>Kitap kritikleri ve incelemeler</summary>
+            <div class="detail-body">
+              <ul>
+                <li>“The Routledge Handbook of Judicial Behavior” üzerine kitap incelemesi — Hacettepe Hukuk Fakültesi Dergisi, 2022.</li>
+                <li>“Amerikan Hukuk Sistemini Yerel Siyaset Üzerinden Okumak” — Anadolu Üniversitesi Hukuk Fakültesi Dergisi, 2021.</li>
+                <li>“The Supreme Court and The Attitudinal Model Revisited” — <strong>İlknur Rabia Sırakaya</strong> adıyla, Hacettepe Hukuk Fakültesi Dergisi, 2019.</li>
+                <li>“Yargı Sürecinin Doğası” — <strong>İlknur Rabia Sırakaya</strong> adıyla, Uluslararası Politik Araştırmalar Dergisi, 2019.</li>
+                <li>“Kamusal Alanda İlişkiler: Toplu Yaşamın Mikro İncelemeleri” — <strong>İlknur Rabia Sırakaya</strong> adıyla, Uluslararası Politik Araştırmalar Dergisi, 2018.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details>
+            <summary>Sertifika</summary>
+            <div class="detail-body">
+              <ul>
+                <li>MARKASEM — Erasmus KA2 ve KA3 Programları İçin Uygulamalı Proje Yazma Eğitimi, 2019.</li>
+              </ul>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="iletisim" class="contact reveal">
+      <div class="shell">
+        <div class="contact-card">
+          <div>
+            <div class="section-kicker" style="color:var(--accent-2)">İletişim</div>
+            <h2>Akademik iletişim ve iş birliği için.</h2>
+            <p>
+              Yayınlar, araştırma gündemi ve akademik iş birlikleri hakkında iletişime geçebilirsiniz.
+            </p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start;position:relative;z-index:2;">
+            <a class="contact-link" href="mailto:ilknurrabiaturkolmez@gmail.com">
+              ilknurrabiaturkolmez@gmail.com
+            </a>
+            <a class="contact-link" href="ilknur-rabia-turkolmez-yok-cv.pdf" target="_blank" rel="noopener">
+              YÖK Formatında Tam CV (PDF)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell">
+      © <span id="year"></span> İlknur Rabia Türkölmez · Akademik Portfolyo
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if(entry.isIntersecting){
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+  </script>
+</body>
+</html>
